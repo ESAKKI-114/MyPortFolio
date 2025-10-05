@@ -14,7 +14,7 @@ function AppContent() {
   const location = useLocation();
  const [isDarkMode, setIsDarkMode] = React.useState(
   localStorage.getItem('darkMode') === 'true' || true
-);
+);  
 
 const toggleDarkMode = () => {
   setIsDarkMode(prev => {
@@ -49,6 +49,7 @@ useEffect(() => {
       <Route path="/contact" element={<Contact />} />
     </Routes>
   </div>
+
 );
 }
 
